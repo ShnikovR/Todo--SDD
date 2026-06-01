@@ -1,0 +1,12 @@
+node_modules/
+dist/
+data/tasks.json
+.coverage/
+coverage/
+.vitest/
+.pytest_cache/
+.venv/
+__pycache__/
+*.pyc
+cypress/videos/
+cypress/screenshots/

@@ -1,0 +1,9 @@
+"""Exceções de domínio — mapeiam regras de negócio da especificação."""
+
+
+class TituloInvalidoError(ValueError):
+    """RN01, RN04: título ausente ou inválido."""
+
+
+class TarefaNaoEncontradaError(LookupError):
+    """RN06: tarefa com id informado não existe."""

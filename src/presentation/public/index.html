@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do — Etapa 2</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Minhas Tarefas</h1>
+      <p class="subtitle">Etapa 2 — SDD / OpenSpec</p>
+    </header>
+
+    <div id="alert" class="alert" role="alert" hidden data-testid="alert"></div>
+
+    <section class="card">
+      <h2>Nova tarefa</h2>
+      <form id="form-criar" data-testid="form-criar">
+        <div class="form-row">
+          <input
+            type="text"
+            id="input-titulo"
+            name="titulo"
+            placeholder="Título da tarefa..."
+            data-testid="input-titulo"
+            maxlength="200"
+          >
+          <select id="select-prioridade-criar" data-testid="select-prioridade-criar">
+            <option value="Baixa">Baixa</option>
+            <option value="Média" selected>Média</option>
+            <option value="Alta">Alta</option>
+          </select>
+          <button type="submit" data-testid="btn-adicionar">Adicionar</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="card">
+      <div class="filters">
+        <h2>Lista de tarefas</h2>
+        <div class="filter-group" data-testid="filter-group">
+          <button type="button" class="filter-btn active" data-filtro="todas" data-testid="filtro-todas">Todas</button>
+          <button type="button" class="filter-btn" data-filtro="pendentes" data-testid="filtro-pendentes">Pendentes</button>
+          <button type="button" class="filter-btn" data-filtro="concluidas" data-testid="filtro-concluidas">Concluídas</button>
+        </div>
+      </div>
+      <ul id="task-list" class="task-list" data-testid="task-list"></ul>
+      <p id="empty-state" class="empty-state" hidden data-testid="empty-state">
+        Nenhuma tarefa encontrada para este filtro.
+      </p>
+    </section>
+  </main>
+
+  <dialog id="dialog-editar" data-testid="dialog-editar">
+    <form id="form-editar" method="dialog">
+      <h3>Editar tarefa</h3>
+      <input type="hidden" id="edit-id">
+      <label>
+        Título
+        <input type="text" id="edit-titulo" data-testid="edit-titulo" required>
+      </label>
+      <label>
+        Prioridade
+        <select id="edit-prioridade" data-testid="edit-prioridade">
+          <option value="Baixa">Baixa</option>
+          <option value="Média">Média</option>
+          <option value="Alta">Alta</option>
+        </select>
+      </label>
+      <div class="dialog-actions">
+        <button type="button" id="btn-cancelar-editar" data-testid="btn-cancelar-editar">Cancelar</button>
+        <button type="submit" data-testid="btn-salvar-editar">Salvar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
