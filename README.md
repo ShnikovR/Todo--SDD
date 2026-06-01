@@ -215,6 +215,20 @@ Documentado em [`docs/uso-da-ia.md`](docs/uso-da-ia.md):
 
 ---
 
+## Análise da Evolução da Especificação e Uso da IA
+
+Durante o desenvolvimento deste projeto foi possível observar a importância da evolução da especificação no processo de desenvolvimento de software.
+
+Na primeira versão, a especificação continha apenas requisitos básicos, permitindo a criação de uma aplicação simples com funcionalidades de cadastro, listagem e conclusão de tarefas. Embora suficiente para uma implementação inicial, a documentação apresentava poucas regras de negócio e poucos detalhes sobre o comportamento esperado do sistema.
+
+Na segunda versão, a especificação foi refinada com novos requisitos funcionais, incluindo edição, exclusão, definição de prioridade, filtros e persistência de dados. Além disso, foram adicionados critérios de aceite, cenários de uso e regras de negócio mais detalhadas. Essa evolução tornou os requisitos mais claros, reduziu ambiguidades e facilitou a implementação das novas funcionalidades.
+
+A utilização da Inteligência Artificial auxiliou principalmente no refinamento da especificação, na geração de código e na criação de testes. A partir dos requisitos definidos, a IA contribuiu para estruturar a arquitetura do projeto, sugerir boas práticas de desenvolvimento e gerar exemplos de testes unitários e testes E2E.
+
+Os resultados demonstraram que especificações mais completas produzem implementações mais consistentes e facilitam o uso de ferramentas de IA, uma vez que respostas mais precisas dependem diretamente da qualidade das instruções fornecidas. Dessa forma, foi possível perceber na prática os benefícios da abordagem Spec Driven Development (SDD), onde a especificação se torna o principal guia para o desenvolvimento, validação e evolução do sistema.
+
+---
+
 ## Licença
 
 Projeto acadêmico — uso educacional.
