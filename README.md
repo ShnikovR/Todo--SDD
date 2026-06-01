@@ -215,23 +215,6 @@ Documentado em [`docs/uso-da-ia.md`](docs/uso-da-ia.md):
 
 ---
 
-## Publicar no GitHub
-
-1. Crie o repositório `todo-sdd` no GitHub.
-2. Na pasta do projeto:
-
-```bash
-git init
-git add .
-git commit -m "feat: entrega To-Do SDD com spec v1/v2, testes Vitest e Cypress"
-git remote add origin https://github.com/SEU_USUARIO/todo-sdd.git
-git push -u origin main
-```
-
-3. Confirme que a estrutura de pastas corresponde à exigida no enunciado.
-
----
-
 ## Licença
 
 Projeto acadêmico — uso educacional.
